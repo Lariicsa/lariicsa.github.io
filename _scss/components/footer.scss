@@ -1,0 +1,14 @@
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: $dryer;
+	width: 100%;
+	&>p {
+		font-size: $medium-size;
+		&>b {
+			font-size: inherit;
+			font-weight: $bold;
+		}
+	}
+}

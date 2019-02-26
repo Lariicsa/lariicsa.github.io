@@ -1,0 +1,18 @@
+title: Lariicsa
+email: dejamepienso@gmail.com
+description: My web
+twitter_username: lariicsa
+github_username:  lariicsa
+
+sass:
+    sass_dir: _scss
+    style: compressed
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
