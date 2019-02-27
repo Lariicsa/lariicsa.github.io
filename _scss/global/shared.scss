@@ -54,7 +54,8 @@ p.cool {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 100%;
-	height: 100%;
+	height: calc(100vh - 18rem);
+	min-height: 70rem;
 
 	&.top-fixed {
 		margin-top: 7.1rem;

@@ -1,6 +1,74 @@
 .header {
+	border: 0;
 	border-bottom: 0.1rem solid $border-grey;
 	background-color: white;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: normal;
 	height: 7rem;
 	width: 100%;
+
+	&>ul {
+		background-color: white;
+		display: flex;
+		margin: 0;
+		padding: 0;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		width: auto;
+
+		&>li {
+			background-color: white;
+			border: 0;
+			display: flex;
+			padding: 0;
+			margin: 0;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			&>a {
+				background-color: white;
+				border: 0;
+				display: flex;
+				padding: 0 4rem;
+				margin: 0;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-decoration: none;
+				color: $bluerple;
+				height: 6.9rem;
+				width: auto;
+
+				&:hover {
+					background-color: $bluerple;
+					color: white;
+				}
+			}
+		}
+	}
+
+	&-pic {
+		display: flex;
+		background-image: url('../../assets/me-small.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 100%;
+		margin-left: 2rem;
+		height: 5rem;
+		width: 5rem;	
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.header > ul {
+		display: none;
+	}
 }
