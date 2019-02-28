@@ -46,7 +46,8 @@
 				height: 6.9rem;
 				width: auto;
 
-				&:hover {
+				&:hover,
+				&.here {
 					background-color: $bluerple;
 					color: white;
 				}
