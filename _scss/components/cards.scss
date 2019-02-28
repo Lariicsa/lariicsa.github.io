@@ -1,0 +1,96 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 57rem;
+    height: 100%;
+    position: relative;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #BECBDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+    width: 57rem;
+    height: auto;
+    min-height: 29rem;
+    max-height: 34rem;
+    animation: fade-in-down 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    position: relative;
+}
+
+.card > a {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #3c97cb;
+    text-indent: -1rem;
+    font-weight: 400;
+}
+
+.card-tags-box {
+    border-top: solid 0.1rem #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    height: 12rem;
+    width: 100%;
+}
+
+.card > h2 {
+    margin: 2rem 0 0 0;
+    text-align: center;
+    font-size: 4rem;
+    color: #ff7260;
+}
+
+.card > p {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #473f44;
+    max-width: 52rem;
+}
+
+.card > span {
+    font-size: 1.3rem;
+    color: #3c97cb;
+    font-weight: 700;
+    position: absolute;
+    top: -0.2rem;
+    left: -13rem;
+}
+
+.card:first-child {
+    margin-top: 0;
+}
+
+.card:before {
+    content: "";
+    background-color: #ffbfb7;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 2.6rem;
+    height: 2.6rem;
+    position: absolute;
+    top: -1rem;
+    left: -17rem;
+}
+
+.card:first-child:before {
+    background-color: #ff7260;
+}
+
+.timeline {
+    border-left: 0.3rem solid #ffbfb7;
+    margin: 5rem 0;
+    max-width: 73rem;
+}
