@@ -1,0 +1,19 @@
+card1:
+    tag: HTML
+    tag: SCSS
+    tag: User Interface
+    tag: Sketch
+    tag: User experience
+    tag: NPM
+    tag: Git
+    tag: Wireframing
+
+card2:
+    tag1: HTML
+    tag2: SCSS
+    tag3: User Interface
+    tag4: Sketch
+    tag5: User experience
+    tag6: NPM
+    tag7: Git
+    tag8: Wireframing

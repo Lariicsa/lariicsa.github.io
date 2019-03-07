@@ -11,6 +11,7 @@
 
 .card {
     background-color: white;
+    border-radius: 0.3rem;
     box-shadow: 1px 1px 1px 1px #BECBDD;
     display: flex;
     flex-direction: column;
@@ -29,7 +30,7 @@
 .card > a {
     font-size: 1.6rem;
     text-align: center;
-    color: #3c97cb;
+    color: $accent;
     text-indent: -1rem;
     font-weight: 400;
 }
@@ -39,6 +40,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 2rem;
     height: 12rem;
     width: 100%;
@@ -48,7 +50,7 @@
     margin: 2rem 0 0 0;
     text-align: center;
     font-size: 4rem;
-    color: #ff7260;
+    color: $girly;
 }
 
 .card > p {
@@ -61,7 +63,7 @@
 
 .card > span {
     font-size: 1.3rem;
-    color: #3c97cb;
+    color: $bluerple;
     font-weight: 700;
     position: absolute;
     top: -0.2rem;
@@ -86,11 +88,11 @@
 }
 
 .card:first-child:before {
-    background-color: #ff7260;
+    background-color: $girly;
 }
 
 .timeline {
-    border-left: 0.3rem solid #ffbfb7;
+    border-left: 0.3rem solid $gloss;
     margin: 5rem 0;
     max-width: 73rem;
 }

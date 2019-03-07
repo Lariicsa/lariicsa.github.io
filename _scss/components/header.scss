@@ -46,11 +46,19 @@
 				height: 6.9rem;
 				width: auto;
 
-				&:hover,
+				&:hover {
+					background-color: rgba($bluerple, 0.2);
+				}
+
 				&.here {
 					background-color: $bluerple;
 					color: white;
+					&:hover {
+						background-color: $bluerple;
+						cursor: default;
+					}
 				}
+				
 			}
 		}
 	}
