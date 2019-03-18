@@ -19,76 +19,79 @@
     margin: 5rem 0;
     width: 57rem;
     height: auto;
-    min-height: 29rem;
-    max-height: 34rem;
     animation: fade-in-down 1s;
     animation-delay: 0.3s;
     animation-fill-mode: both;
     position: relative;
-}
 
-.card > a {
-    font-size: 1.6rem;
-    text-align: center;
-    color: $accent;
-    text-indent: -1rem;
-    font-weight: 400;
-}
+    &:first-child {
+        margin-top: 0;
+        &:before {
+            background-color: $girly;
+        }
+    }
+    
+    &:before {
+        content: "";
+        background-color: #ffbfb7;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 2.6rem;
+        height: 2.6rem;
+        position: absolute;
+        top: -1rem;
+        left: -17rem;
+    }
 
-.card-tags-box {
-    border-top: solid 0.1rem #f1f1f1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 2rem;
-    height: 12rem;
-    width: 100%;
-}
+    &>a {
+        font-size: 1.6rem;
+        text-align: center;
+        color: $accent;
+        font-weight: 400;
+    }
 
-.card > h2 {
-    margin: 2rem 0 0 0;
-    text-align: center;
-    font-size: 4rem;
-    color: $girly;
-}
+    &> h2 {
+        margin: 2rem 0 0 0;
+        text-align: center;
+        font-size: 4rem;
+        color: $girly;
+    }
 
-.card > p {
-    margin: 2rem 0;
-    text-align: center;
-    font-size: 1.8rem;
-    color: #473f44;
-    max-width: 52rem;
-}
+    &> p {
+        margin: 1.5rem 0;
+        text-align: center;
+        font-size: 1.8rem;
+        color: #473f44;
+        max-width: 52rem;
+        &.project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+        }
+    }
+    
+    &> span {
+        font-size: 1.3rem;
+        color: $bluerple;
+        font-weight: 700;
+        position: absolute;
+        top: -0.2rem;
+        left: -13rem;
+    }
 
-.card > span {
-    font-size: 1.3rem;
-    color: $bluerple;
-    font-weight: 700;
-    position: absolute;
-    top: -0.2rem;
-    left: -13rem;
-}
-
-.card:first-child {
-    margin-top: 0;
-}
-
-.card:before {
-    content: "";
-    background-color: #ffbfb7;
-    border-radius: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 2.6rem;
-    height: 2.6rem;
-    position: absolute;
-    top: -1rem;
-    left: -17rem;
-}
-
-.card:first-child:before {
-    background-color: $girly;
+    &-tags-box {
+        border-top: solid 0.1rem #f1f1f1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1.5rem;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .timeline {
