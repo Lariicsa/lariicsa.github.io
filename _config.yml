@@ -16,3 +16,6 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+gems:
+  - octopress-autoprefixer
