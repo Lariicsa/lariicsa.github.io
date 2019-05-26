@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="2058px" viewBox="0 0 26 2058" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF5379" offset="0%"></stop>
+            <stop stop-color="#FFCCD7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Experience" transform="translate(-236.000000, -145.000000)">
+            <g id="Group" transform="translate(236.000000, 145.000000)">
+                <rect id="Rectangle-3" fill="url(#linearGradient-1)" x="12" y="0" width="2" height="2058" rx="1"></rect>
+                <circle id="Oval-2" fill="#FF5379" cx="13" cy="13" r="13"></circle>
+                <circle id="Oval-2" fill="#FF6B8B" cx="13" cy="422" r="13"></circle>
+                <circle id="Oval-2" fill="#FF809C" cx="13" cy="793" r="13"></circle>
+                <circle id="Oval-2" fill="#FF9DB2" cx="13" cy="1267" r="13"></circle>
+                <circle id="Oval-2" fill="#FFC4D1" cx="13" cy="1766" r="13"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

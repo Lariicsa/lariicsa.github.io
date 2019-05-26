@@ -1,7 +1,6 @@
 .header {
 	border: 0;
-	border-bottom: 0.1rem solid $border-grey;
-	background-color: white;
+	background-color: $blackio;
 	padding: 0;
 	margin: 0;
 	display: flex;
@@ -10,9 +9,13 @@
 	line-height: normal;
 	height: 7rem;
 	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
 
 	&>ul {
-		background-color: white;
+		background-color: $blackio;
 		display: flex;
 		margin: 0;
 		padding: 0;
@@ -23,7 +26,7 @@
 		width: auto;
 
 		&>li {
-			background-color: white;
+			background-color: $blackio;
 			border: 0;
 			display: flex;
 			padding: 0;
@@ -33,7 +36,7 @@
 			align-items: center;
 
 			&>a {
-				background-color: white;
+				background-color: $blackio;
 				border: 0;
 				display: flex;
 				padding: 0 4rem;
@@ -42,23 +45,28 @@
 				justify-content: center;
 				align-items: center;
 				text-decoration: none;
-				color: $bluerple;
-				height: 6.9rem;
+				color: white;
+				height: 7rem;
 				width: auto;
+				transition: all 0.9s ease;
 
 				&:hover {
-					background-color: rgba($bluerple, 0.2);
+					background: rgb(255, 107, 107);
+					background: linear-gradient(0deg, rgba(255, 107, 107, 0.5) 0%, rgba(224, 41, 98, 0.4) 100%);
+					color: inherit;
 				}
 
 				&.here {
-					background-color: $bluerple;
+					background: rgb(255, 107, 107);
+					background: linear-gradient(0deg, rgba(255, 107, 107, 1) 0%, rgba(224, 41, 98, 1) 100%);
 					color: white;
+
 					&:hover {
-						background-color: $bluerple;
-						cursor: default;
+						color: inherit;
+						pointer-events: none;
 					}
 				}
-				
+
 			}
 		}
 	}
@@ -72,12 +80,12 @@
 		border-radius: 100%;
 		margin-left: 2rem;
 		height: 5rem;
-		width: 5rem;	
+		width: 5rem;
 	}
 }
 
 @media only screen and (max-width: 650px) {
-	.header > ul {
+	.header>ul {
 		display: none;
 	}
 }

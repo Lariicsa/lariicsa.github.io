@@ -12,7 +12,7 @@
 .card {
     background-color: white;
     border-radius: 0.3rem;
-    box-shadow: 1px 1px 1px 1px #BECBDD;
+    box-shadow: $shadow;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,14 +26,29 @@
 
     &:first-child {
         margin-top: 0;
-        &:before {
-            background-color: $girly;
-        }
+    }
+
+    &:nth-child(1):before {
+        background: #FF5379;
+    }
+    &:nth-child(2):before {
+        background: #e44675;
+    }
+    &:nth-child(3):before {
+        background: #e9658b;
+    }
+    &:nth-child(4):before {
+        background: #ef82a0;
+    }
+    &:nth-child(5):before {
+        background: #f59fb5;
+    }
+    &:nth-child(6):before {
+        background: #f9b8c8;
     }
     
     &:before {
         content: "";
-        background-color: #ffbfb7;
         border-radius: 100%;
         display: flex;
         flex-direction: column;
@@ -41,7 +56,7 @@
         height: 2.6rem;
         position: absolute;
         top: -1rem;
-        left: -17rem;
+        left: -17.1rem;
     }
 
     &>a {
@@ -75,7 +90,7 @@
     
     &> span {
         font-size: 1.3rem;
-        color: $bluerple;
+        color: $girly;
         font-weight: 700;
         position: absolute;
         top: -0.2rem;
@@ -95,7 +110,9 @@
 }
 
 .timeline {
-    border-left: 0.3rem solid $gloss;
+    border-left: 0.3rem solid transparent;
+    border-image:linear-gradient(180deg, rgba(224,41,98,1) 0%, rgba(255,204,215,1) 100%);
+    border-image-slice: 1;
     margin: 5rem 0;
     max-width: 73rem;
 }
