@@ -25,12 +25,25 @@ body {
 }
 
 a {
-	color: $bluerple;
+	color: $accent;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: $bold;
 }
 
 h1 {
+	font-size: 6.4rem;
+}
+
+h2 {
+	font-size: 5.6rem;
+}
+
+h3 {
 	font-size: 4rem;
-	font-weight: $bold;
 }
 
 p.cool {
@@ -67,6 +80,15 @@ p.cool {
 	&.top-fixed {
 		margin-top: 14.2rem;
 	}
+}
+
+.inner-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: $maxwidth-inner-containner;
 }
 
 .main-container {
