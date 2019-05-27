@@ -6,13 +6,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	align-self: center;
 	line-height: normal;
 	height: 7rem;
 	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100;
+	max-width: $maxwidth-inner-containner;
 
 	&>ul {
 		background-color: $blackio;
@@ -78,9 +76,25 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		border-radius: 100%;
-		margin-left: 2rem;
 		height: 5rem;
 		width: 5rem;
+	}
+	&-wrapper {
+		border: 0;
+		background-color: $blackio;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-self: center;
+		line-height: normal;
+		height: 7rem;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
 	}
 }
 
