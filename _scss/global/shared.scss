@@ -2,7 +2,6 @@
 
 //SHARED
 html {
-	background: rgb(81,91,99);
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 	font-size: 62.5%;
@@ -31,6 +30,7 @@ a {
 h1,
 h2,
 h3 {
+	margin: 1.6rem 0;
 	font-weight: $bold;
 }
 
@@ -56,8 +56,8 @@ p.cool {
 }
 
 .space {
-	background: rgb(81,91,99);
-	background: linear-gradient(180deg, rgba(81,91,99,1) 0%, rgba(61,69,76,1) 100%);
+	background: rgb(93,101,109);
+	background: linear-gradient(180deg, rgba(93,101,109,1) 0%, rgba(61,69,76,1) 53%);
 	display: flex;
 	padding: 0;
 	flex-direction: column;
@@ -85,7 +85,7 @@ p.cool {
 .inner-container {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	width: 100%;
 	max-width: $maxwidth-inner-containner;
@@ -179,8 +179,8 @@ p.cool {
 }
 
 .animated {
-	animation: fade-in-down 0.6s;
-	animation-delay: 0.3s;
+	animation: fade-in-down 0.8s;
+	animation-delay: 0.5s;
 	animation-fill-mode: both;
 }
 

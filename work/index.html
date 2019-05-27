@@ -1,0 +1,19 @@
+---
+layout: default
+title: Work
+slug: work
+---
+<div class="row">
+		<h2>{{title}}</h2>
+	</div>
+	<div class="col latests animated">
+			<ul  class="latest">
+					{% for post in site.posts %}
+							<li class="latest-item" style="background-image: url('{{post.image}}')">
+									<a href="{{ post.url }}">
+										<h3>{{ post.title }}</h3>
+									</a>
+							</li>
+					{% endfor %}
+			</ul>
+	</div>

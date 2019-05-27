@@ -5,9 +5,7 @@
 	background-color: #3D454C;
 	height: 4rem;
 	width: 100%;
-	position: absolute;
-	right: 0;
-	bottom: 0;
+	position: relative;
 	&>p {
 		font-size: $medium-size;
 		&>b {

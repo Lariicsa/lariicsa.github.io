@@ -5,27 +5,28 @@ title: Home
 slug: home
 ---
 
-<div class="row center lg">
+<div class="row center lg animated">
 	<div class="col lg">
 		<h1>Hi, I'm Larissa Avila</h1>
 
 		<p class="cool">
 			I’m <span>UI Designer</span> and master in <span>HTML/CSS</span> layingout.<br>
-			I enjoy design interfaces and then inject them in frontend.
+			I enjoy design user interfaces and then inject them in frontend.
 		</p>
 
 		<div class="row">
 			<h2>Recent work</h2>
 		</div>
-		<div class="row">
+		<div class="col latests animated">
 				<ul  class="latest">
-						{% for post in site.posts %}
-								<li class="latest-item">
+						{% for post in site.posts limit:3 %}
+								<li class="latest-item" style="background-image: url('{{post.image}}')">
 										<a href="{{ post.url }}">
 											<h3>{{ post.title }}</h3>
 										</a>
 								</li>
-						{% endfor %}
+								{% endfor %}
+								<li class="latest-more"><a href="/work"><h3>View more work</h3></a></li>
 				</ul>
 		</div>
 	</div>

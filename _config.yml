@@ -20,5 +20,5 @@ exclude:
 gems:
   - octopress-autoprefixer
 
-paginate: 1
+paginate: 3
 paginate_path: "/blog/page:num/"
