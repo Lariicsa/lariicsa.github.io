@@ -29,7 +29,7 @@
     }
 
     &:nth-child(1):before {
-        background: #FF5379;
+        background: #E02B64;
     }
     &:nth-child(2):before {
         background: #e44675;
@@ -90,7 +90,7 @@
     
     &> span {
         font-size: 1.3rem;
-        color: $girly;
+        color: $gloss;
         font-weight: 700;
         position: absolute;
         top: -0.2rem;
