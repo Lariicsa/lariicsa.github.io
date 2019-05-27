@@ -7,14 +7,27 @@ slug: home
 
 <div class="row center md">
 	<div class="col lg">
-		<h1>Hi, I'm Larissa Avila</h1>
+		<h1>Hi, I'm Larissa Avia</h1>
 
-	<p class="cool">
-		I’m <span>UI Designer</span> and master in <span>HTML/CSS</span> layingout.
+		<p class="cool">
+			I’m <span>UI Designer</span> and master in <span>HTML/CSS</span> layingout.
 
-		I enjoy design interfaces and then inject them in frontend.
+			I enjoy design interfaces and then inject them in frontend.
 
-		Let me show you some of my work ...
-	</p>
+			Let me show you some of my work ...
+		</p>
+
+		<div class="row">
+			<h2>Recent work</h2>
+
+			<ul>
+				{% for post in site.posts %}
+				<li>
+					<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
 	</div>
+
 </div>
