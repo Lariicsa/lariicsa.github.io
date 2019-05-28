@@ -11,6 +11,9 @@ html {
 }
 
 body {
+	background-image: url('../../assets/bg-img.jpg');
+	background-repeat: repeat-y;
+	background-size: cover; 
 	margin: 0;
 	min-height: 100%;
 	position: relative;
@@ -57,7 +60,7 @@ p.cool {
 
 .space {
 	background: rgb(93,101,109);
-	background: linear-gradient(180deg, rgba(93,101,109,1) 0%, rgba(61,69,76,1) 53%);
+	background: linear-gradient(180deg, rgba(93,101,109,0.8) 0%, rgba(61,69,76,0.8) 53%);
 	display: flex;
 	padding: 0;
 	flex-direction: column;

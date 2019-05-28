@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="576px" height="292px" viewBox="0 0 576 292" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#E02962" offset="0%"></stop>
+            <stop stop-color="#FF6B6B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.879045759">
+        <g id="Home" transform="translate(-20.000000, -484.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M20.415333,746.946381 C20.1623259,746.611394 20.0122858,746.194289 20.0122858,745.742141 L20.0122858,741.054984 C20.0040973,740.624798 20,740.189803 20,739.749955 C20,739.354766 20.0041012,738.959999 20.0122858,738.565662 L20.0122858,486 C20.0122858,484.895431 20.9077164,484 22.0122858,484 L594,484 C595.104569,484 596,484.895431 596,486 L596,745.742141 C596,746.21145 595.838355,746.643005 595.567702,746.984166 C588.237788,805.99184 485.240843,756.73335 307.993857,756.73335 C130.709053,756.73335 27.7059783,806.012862 20.415333,746.946381 Z" id="Mask"></path>
+        </g>
+    </g>
+</svg>

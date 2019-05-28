@@ -1,6 +1,6 @@
 .header {
 	border: 0;
-	background-color: $blackio;
+	background-color: #50565d;
 	padding: 0;
 	margin: 0;
 	display: flex;
@@ -13,7 +13,7 @@
 	max-width: $maxwidth-inner-containner;
 
 	&>ul {
-		background-color: $blackio;
+		background-color: #50565d;
 		display: flex;
 		margin: 0;
 		padding: 0;
@@ -24,7 +24,7 @@
 		width: auto;
 
 		&>li {
-			background-color: $blackio;
+			background-color: transparent;
 			border: 0;
 			display: flex;
 			padding: 0;
@@ -34,7 +34,7 @@
 			align-items: center;
 
 			&>a {
-				background-color: $blackio;
+				background-color: transparent;
 				border: 0;
 				display: flex;
 				padding: 0 4rem;
@@ -81,7 +81,7 @@
 	}
 	&-wrapper {
 		border: 0;
-		background-color: $blackio;
+		background-color: #50565d;
 		padding: 0;
 		margin: 0;
 		display: flex;
