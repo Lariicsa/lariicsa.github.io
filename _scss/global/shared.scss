@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap');
 @import "variables.scss";
 
 //SHARED
 html {
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 62.5%;
 	height: 100%;
 	width: 100%;
@@ -60,7 +61,7 @@ p.cool {
 
 .space {
 	background: rgb(93,101,109);
-	background: linear-gradient(180deg, rgba(93,101,109,0.8) 0%, rgba(61,69,76,0.8) 53%);
+	background: linear-gradient(180deg, rgba(93,101,109,0.88) 0%, rgba(61,69,76,0.96) 53%);
 	display: flex;
 	padding: 0;
 	flex-direction: column;
@@ -196,5 +197,11 @@ p.cool {
 	100% {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.inner-container {
+		padding: 1rem;
 	}
 }
