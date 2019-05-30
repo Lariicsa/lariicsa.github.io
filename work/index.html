@@ -3,17 +3,23 @@ layout: default
 title: Work
 slug: work
 ---
-<div class="row">
-		<h2>{{title}}</h2>
+
+<div class="row center lg animated">
+	<div class="col lg">
+		<div class="row">
+			<h2>Recent work</h2>
+		</div>
+		<div class="col latests animated">
+				<ul  class="latest">
+						{% for post in site.posts %}
+								<li class="latest-item">
+										<a href="{{ post.url }}">
+											<div class="latest-item-image" style="background-image: url('{{post.image}}')"></div>
+											<div class="latest-item-mask"><h3>{{ post.title }}</h3></div>
+										</a>
+								</li>
+								{% endfor %}
+				</ul>
+		</div>
 	</div>
-	<div class="col latests animated">
-			<ul  class="latest">
-					{% for post in site.posts %}
-							<li class="latest-item" style="background-image: url('{{post.image}}')">
-									<a href="{{ post.url }}">
-										<h3>{{ post.title }}</h3>
-									</a>
-							</li>
-					{% endfor %}
-			</ul>
-	</div>
+</div>

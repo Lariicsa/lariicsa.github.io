@@ -1,13 +1,15 @@
 ---
-title: Holding Leos
+title: "Holding Leos website"
 date: 2019-05-08 20:35
 layout: post
 image: /assets/holding.jpg
+img1: /assets/hl/hl1.png
+img2: /assets/hl/hl2.png
 tag:
-- markdown
-- components
+- ui
+- html
 category: UI
 author: Larissa Avila
-description: a simple Tech Website
+description: "a simple Tech Website for a tech & carrier company"
 ---
- <h1>{{title}}</h1>
+
