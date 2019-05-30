@@ -143,3 +143,14 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 500px) {
+	.latest {
+		&-item {
+			&-more {
+				font-size: 2.4rem;
+				height: 6.4rem;
+			}
+		}
+	}
+}
