@@ -11,3 +11,10 @@ name: default
 	</div>
 	{% include footer.html%}
 </div>
+
+{% if page.js_file %}
+	<script src="/js/{{page.js_file}}"></script>
+{% endif %}
+
+</body>
+</html>

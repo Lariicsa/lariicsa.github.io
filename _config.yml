@@ -19,6 +19,9 @@ exclude:
 
 gems:
   - octopress-autoprefixer
+  - jekyll-watch
 
+
+livereload: true
 paginate: 3
 paginate_path: "/blog/page:num/"
