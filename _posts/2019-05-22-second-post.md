@@ -2,7 +2,7 @@
 title: "Holding Leos website"
 date: 2019-05-08 20:35
 layout: post
-image: /assets/holding.jpg
+image: /assets/post-preview/holdingleos.jpg
 img1: /assets/hl/hl1.png
 img2: /assets/hl/hl2.png
 tag:
