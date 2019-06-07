@@ -8,8 +8,8 @@ img2: /assets/hl/hl2.png
 tag:
 - ui
 - html
-category: UI
 author: Larissa Avila
 description: "a simple Tech Website for a tech & carrier company"
+menurl: /work/
 ---
 

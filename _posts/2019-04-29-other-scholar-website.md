@@ -10,9 +10,9 @@ tag:
 - UI
 - HTML
 - CSS
-category: UI
 author: Larissa
 description: A web application to manage colleges coaching information
+menurl: /work/
 ---
 	
 	Lorem Ipsum es un texto de marcador de posición comúnmente utilizado en las industrias gráficas, gráficas y editoriales para previsualizar diseños y maquetas visuales.

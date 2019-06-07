@@ -5,7 +5,7 @@
 		</div>
 		<ul class="menu">
 			{% for item in site.data.menu %}
-			<li><a href="{{ item.url }}" class="{% if item.url == page.url %}here{% endif %}">{{ item.title }}</a></li>
+			<li><a href="{{ item.url }}" class="{% if item.url == page.menurl %}here{% endif %}">{{ item.title }}</a></li>
 			{% endfor %}
 		</ul>
 		<div class="header-mobile-toggle" onclick="burgerButton()">
@@ -17,7 +17,7 @@
 
 	<ul class="header-mobile-menu">
 		{% for item in site.data.menu %}
-		<li><a href="{{ item.url }}" class="{% if item.url == page.url %}here{% endif %}">{{ item.title }}</a></li>
+		<li><a href="{{ item.url }}" class="{% if item.url == page.menurl %}here{% endif %}">{{ item.title }}</a></li>
 		{% endfor %}
 	</ul>
 </div>
