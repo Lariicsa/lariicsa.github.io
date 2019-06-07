@@ -22,6 +22,6 @@ gems:
   - jekyll-watch
 
 
-livereload: true
+livereload: false
 paginate: 3
 paginate_path: "/blog/page:num/"
