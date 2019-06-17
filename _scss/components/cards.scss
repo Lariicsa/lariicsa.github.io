@@ -183,6 +183,9 @@
         z-index: 0;
         left: calc(50% - 2px);
         top: 0;
+        &.short {
+            height: 80%;
+        }
     }
 
     .timeline {
