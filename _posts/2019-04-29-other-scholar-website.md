@@ -5,7 +5,7 @@ date: 2019-04-29 16:48
 image: /assets/post-preview/coaching.jpg
 img1: /assets/coaching/coaching1.jpg
 img2: /assets/coaching/coaching2.jpg
-
+category: work
 tag:
 - UI
 - HTML

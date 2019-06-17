@@ -20,17 +20,7 @@ js_file: utils.js
 			<h2>Recent work</h2>
 		</div>
 		<div class="col latests animated">
-				<ul  class="latest">
-						{% for post in site.posts limit:3 %}
-								<li class="latest-item">
-										<a href="{{ post.url }}">
-											<div class="latest-item-image" style="background-image: url('{{post.image}}')"></div>
-											<div class="latest-item-mask"><h3>{{ post.title }}</h3></div>
-										</a>
-								</li>
-								{% endfor %}
-								<a class="latest-item-more" href="/work">View all work</a>
-				</ul>
+								<a class="latest-item-more" href="/experience">View Experience</a>
 		</div>
 	</div>
 
