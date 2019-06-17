@@ -176,6 +176,10 @@
             right: 0;
             bottom: 0;
         }
+        &>a.card-item-more {
+            width: 100%;
+            font-size: 1.8rem;
+        }
     }
     .line {
         height: 100%;
