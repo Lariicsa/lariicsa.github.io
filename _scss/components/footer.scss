@@ -1,16 +1,60 @@
 .footer {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	background-color: #3D454C;
 	height: 4rem;
 	width: 100%;
 	position: relative;
+
 	&>p {
 		font-size: $medium-size;
+
 		&>b {
 			font-size: inherit;
 			font-weight: $bold;
+		}
+	}
+
+	ul {
+		display: flex;
+		list-style-type: none;
+
+		li {
+			margin: 0 1.6rem;
+			font-size: $medium-size;
+			color: $blue-lite;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.footer {
+		height: auto;
+		padding: 1.6rem 0.8rem;
+
+		ul {
+			flex-direction: column;
+			align-items: flex-end;
+
+			li {
+				margin: 1.6rem 0;
+
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+
+		p {
+
+			b {
+				display: block;
+			}
 		}
 	}
 }
