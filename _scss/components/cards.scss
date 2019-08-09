@@ -53,6 +53,10 @@
         background: #f9b8c8;
     }
 
+    &:nth-child(7):before {
+        background: #fcc0cf;
+    }
+
     &:before {
         content: "";
         border-radius: 100%;
