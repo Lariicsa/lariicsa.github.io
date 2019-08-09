@@ -158,14 +158,34 @@
 	}
 
 	&-pic {
-		display: flex;
-		background-image: url('../../assets/me-small.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
+		background: rgb(255, 107, 107);
+		background: linear-gradient(0deg, rgba(255, 107, 107, 0.8) 0%, rgba(224, 41, 98, 0.8) 100%);
 		border-radius: 100%;
-		height: 5rem;
-		width: 5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 5.8rem;
+		width: 5.8rem;
+		position: relative;
+		z-index: 0;
+
+		&:hover {
+			background: linear-gradient(0deg, rgba(255, 107, 107, 1) 0%, rgba(224, 41, 98, 1) 100%);
+		}
+
+		&:before {
+			content: '';
+			background-image: url('../../assets/me-small-2.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			border-radius: 100%;
+			display: flex;
+			height: 4.8rem;
+			width: 4.8rem;
+			z-index: 1;
+		}
 	}
 
 	&-wrapper {
