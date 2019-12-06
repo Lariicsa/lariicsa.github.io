@@ -110,8 +110,8 @@ p.cool {
   width: 100%;
   max-width: $maxwidth-inner-containner;
 
-  @include until(1024px) {
-    padding: 1rem;
+  @include until(1200) {
+    padding: 1.6rem;
   }
 }
 
