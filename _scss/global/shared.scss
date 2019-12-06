@@ -1,229 +1,229 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap");
 @import "variables.scss";
+@import "mixins.scss";
 
 //SHARED
 html {
-	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 62.5%;
-	height: 100%;
-	width: 100%;
-	scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-	background-image: url('../../assets/bg-img.jpg');
-	background-repeat: repeat-y;
-	background-size: cover; 
-	margin: 0;
-	min-height: 100%;
-	position: relative;
+  background-image: url("../../assets/bg-img.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
 }
 
 * {
-	box-sizing: border-box;
-	font-size: $regular-size;
-	font-family: 'Montserrat', sans-serif;
-	color: white;
+  box-sizing: border-box;
+  font-size: $regular-size;
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 a {
-	color: $accent;
+  color: $accent;
 }
 
 h1,
 h2,
 h3 {
-	margin: 1.6rem 0;
-	font-weight: $bold;
+  margin: 1.6rem 0;
+  font-weight: $bold;
+  @include until(600px) {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 h1 {
-	font-size: 6.4rem;
+  font-size: 6.4rem;
+  @include until(600px) {
+    font-size: 4rem;
+  }
 }
 
 h2 {
-	font-size: 5.6rem;
+  font-size: 5.6rem;
+  @include until(600px) {
+    font-size: 3.2rem;
+  }
 }
 
 h3 {
-	font-size: 4rem;
+  font-size: 4rem;
 }
 
 p.cool {
-	font-size: 3.4rem;
+  font-size: 3.4rem;
 
-	&>span {
-		font-size: inherit;
-		color: $girly;
-	}
+  & > span {
+    font-size: inherit;
+    color: $girly;
+  }
+
+  @include until(600px) {
+    font-size: $small-title;
+    text-align: center;
+  }
 }
 
 .space {
-	background: rgb(93,101,109);
-	background: linear-gradient(180deg, rgba(93,101,109,0.88) 0%, rgba(61,69,76,0.96) 53%);
-	display: flex;
-	padding: 0;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
-	width: 100%;
-	height: calc(100% - 11rem);
+  background: rgb(93, 101, 109);
+  background: linear-gradient(180deg, rgba(93, 101, 109, 0.88) 0%, rgba(61, 69, 76, 0.96) 53%);
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 11rem);
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	width: 100%;
-	height: 100%;
-	min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
 
-	&.top-fixed {
-		margin-top: 14.2rem;
-	}
+  &.top-fixed {
+    margin-top: 14.2rem;
+  }
 }
 
 .inner-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	width: 100%;
-	max-width: $maxwidth-inner-containner;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: $maxwidth-inner-containner;
+
+  @include until(1024px) {
+    padding: 1rem;
+  }
 }
 
 .main-container {
-	background-color: #f6fafc;
-	margin: 0;
-	padding: 1rem;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	height: calc(100% - 6rem);
-	min-height: 100vh;
-	width: 100%;
+  background-color: #f6fafc;
+  margin: 0;
+  padding: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 6rem);
+  min-height: 100vh;
+  width: 100%;
 }
 
 .col {
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-wrap: break-word;
 
-	&.bottom {
-		justify-content: flex-end;
-	}
+  &.bottom {
+    justify-content: flex-end;
+  }
 
-	&.center {
-		justify-content: center;
-	}
+  &.center {
+    justify-content: center;
+  }
 
-	&.top {
-		justify-content: flex-start;
-	}
+  &.top {
+    justify-content: flex-start;
+  }
 
-	&Half {
-		@extend .col;
-		flex: 0 1 49%;
-		width: 49%;
-	}
+  &Half {
+    @extend .col;
+    flex: 0 1 49%;
+    width: 49%;
+    @include until(600px) {
+      flex: 0 1 100%;
+      width: 100%;
+    }
+  }
 }
 
 .row {
-	display: flex;
-	margin-right: 0;
-	margin-left: 0;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-	position: relative;
-	overflow-wrap: break-word;
+  display: flex;
+  margin-right: 0;
+  margin-left: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  overflow-wrap: break-word;
 
-	&.between {
-		justify-content: space-between;
+  &.between {
+    justify-content: space-between;
 
-		&-c {
-			justify-content: space-between;
-			align-items: center;
-		}
-	}
+    &-c {
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 
-	&.around {
-		justify-content: space-around;
-	}
+  &.around {
+    justify-content: space-around;
+  }
 
-	&.center {
-		justify-content: center;
-	}
+  &.center {
+    justify-content: center;
+  }
 
-	&.left {
-		justify-content: flex-start;
-	}
+  &.left {
+    justify-content: flex-start;
+  }
 
-	&.right {
-		justify-content: flex-end;
-	}
+  &.right {
+    justify-content: flex-end;
+  }
 
-	&.lg {
-		width: $large;
-	}
+  &.lg {
+    width: $large;
+  }
 
-	&.md {
-		width: $medium;
-	}
+  &.md {
+    width: $medium;
+  }
 
-	&.sm {
-		width: $small;
-	}
+  &.sm {
+    width: $small;
+  }
 }
 
 .animated {
-	animation: fade-in-down 0.8s;
-	animation-delay: 0.5s;
-	animation-fill-mode: both;
+  animation: fade-in-down 0.8s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+.main-text {
+  font-size: $big-size;
+  line-height: $small-title;
 }
 
 @keyframes fade-in-down {
-	0% {
-		opacity: 0;
-		transform: translateY(-10px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-	.inner-container {
-		padding: 1rem;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	h1,
-	h2,
-	h3 {
-		text-align: center;
-		width: 100%;
-	}
-
-	h1 {
-		font-size: 4rem;
-	}
-	h2 {
-		font-size: 3.2rem;
-	}
-
-	p,
-	p.cool {
-		font-size: 2.4rem;
-	}
-
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

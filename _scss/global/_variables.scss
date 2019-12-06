@@ -8,7 +8,8 @@ $border-grey: #f1f1f1;
 $dryer: #ebeff0;
 $girly: #ff5077;
 $gloss: #ffccd7;
-
+$grad-bg: linear-gradient(0deg, rgba(255, 107, 107, 0.5) 0%, rgba(224, 41, 98, 0.4) 100%);
+$grad-bg-solid:rgb(255, 107, 107);
 //Font
 $bold: 700;
 $regular: 400;
@@ -16,6 +17,8 @@ $regular: 400;
 $small-size: 1.2rem;
 $medium-size: 1.4rem;
 $regular-size: 1.6rem;
+$big-size: 1.8rem;
+$small-title: 2.4rem;
 $big-title: 3.2rem;
 
 //Larges
