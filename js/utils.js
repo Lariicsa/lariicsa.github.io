@@ -8,6 +8,4 @@ function burgerButton() {
 	} else {
 		larBurger.classList.add('open');
 	}
-
-	console.log('burger')
 }
