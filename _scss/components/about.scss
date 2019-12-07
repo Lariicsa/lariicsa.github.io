@@ -1,5 +1,5 @@
 .about {
-  margin-top: 8%;
+  margin: 8% 0;
   @include until(600px) {
     flex-direction: column-reverse;
   }
