@@ -18,6 +18,7 @@
     @include until(600px) {
       min-height: 16rem;
       background-position: center 84%;
+      background-attachment: scroll;
       background-size: 48%;
       padding: 2.4rem;
       height: 48rem;
