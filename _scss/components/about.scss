@@ -24,4 +24,49 @@
       height: auto;
     }
   }
+  &-bg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8%;
+    height: auto;
+    min-height: 44vw;
+    &.white {
+      background-color: white;
+      color: $blackio;
+      & > * {
+        color: inherit;
+        line-height: normal;
+      }
+      & > h3 {
+        font-size: $big-title;
+      }
+
+      & p {
+        font-size: $big-size;
+        text-align: justify;
+        & > strong {
+          color: $girly;
+        }
+      }
+    }
+    &.girly {
+      background-color: $girly;
+      align-items: center;
+      & p {
+        margin: 1.6rem 0;
+        font-size: $big-special;
+        font-family: $font-secondary;
+        font-weight: $bold;
+        color: white;
+        text-align: center;
+      }
+    }
+    &.picture-1 {
+      background-image: url("../../assets/pic-me.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
 }

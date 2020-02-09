@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&display=swap");
 @import "variables.scss";
 @import "mixins.scss";
 
 //SHARED
 html {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-main;
   font-size: 62.5%;
   height: 100%;
   width: 100%;
@@ -24,7 +23,7 @@ body {
 * {
   box-sizing: border-box;
   font-size: $regular-size;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-main;
   color: white;
 }
 
@@ -98,7 +97,8 @@ p.cool {
   min-height: 100vh;
 
   &.top-fixed {
-    margin-top: 14.2rem;
+    margin-top: 7rem;
+    padding-top: 7.2rem;
   }
 }
 
@@ -149,8 +149,8 @@ p.cool {
 
   &Half {
     @extend .col;
-    flex: 0 1 49%;
-    width: 49%;
+    flex: 0 1 auto;
+    width: 50%;
     @include until(600px) {
       flex: 0 1 100%;
       width: 100%;
