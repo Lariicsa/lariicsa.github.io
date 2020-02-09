@@ -15,13 +15,13 @@
     padding: 2.4rem 4rem;
     flex: 0 1 32%;
     height: 48rem;
-    @include until(1024px) {
+    @include until(1025px) {
       min-height: 16rem;
-      background-position: center 84%;
+      background-position: center;
       background-attachment: fixed;
       background-size: 48%;
       padding: 2.4rem;
-      height: 48rem;
+      height: auto;
     }
   }
 }
