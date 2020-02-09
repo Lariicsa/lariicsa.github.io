@@ -17,7 +17,7 @@
     height: 48rem;
     @include until(1025px) {
       min-height: 16rem;
-      background-position: center;
+      background-position: center top;
       background-attachment: fixed;
       background-size: 48%;
       padding: 2.4rem;
