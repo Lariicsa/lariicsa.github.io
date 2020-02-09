@@ -74,6 +74,13 @@ p.cool {
   }
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
 .space {
   background: rgb(93, 101, 109);
   background: linear-gradient(180deg, rgba(93, 101, 109, 0.88) 0%, rgba(61, 69, 76, 0.96) 53%);
@@ -112,6 +119,10 @@ p.cool {
 
   @include until(1200) {
     padding: 1.6rem;
+  }
+
+  &.top {
+    align-items: flex-start;
   }
 }
 
@@ -225,5 +236,44 @@ p.cool {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.card-item-more {
+  background: rgb(82, 169, 225);
+  background: linear-gradient(90deg, rgba(82, 169, 225, 0.8) 0%, rgba(83, 154, 183, 0.8) 100%);
+  border-radius: 3.2rem;
+  margin: auto auto auto 1.6rem;
+  padding: $regular-size 4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 80%;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.2rem;
+  color: white;
+  text-decoration: none;
+  height: 7.2rem;
+  width: auto;
+  position: relative;
+
+
+  &:hover {
+    background: rgb(82, 169, 225);
+    background: linear-gradient(90deg, rgba(82, 169, 225, 1) 0%, rgba(83, 154, 183, 1) 100%);
+  }
+
+  @include until(800px) {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+  @include until(400px) {
+    & > h2 {
+      font-size: $small-title;
+    }
+    & > p {
+      font-size: $regular-size;
+    }
   }
 }
