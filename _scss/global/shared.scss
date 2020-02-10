@@ -78,7 +78,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
 
 .space {
@@ -243,7 +242,7 @@ ul {
   background: rgb(82, 169, 225);
   background: linear-gradient(90deg, rgba(82, 169, 225, 0.8) 0%, rgba(83, 154, 183, 0.8) 100%);
   border-radius: 3.2rem;
-  margin: auto auto auto 1.6rem;
+  margin: 0;
   padding: $regular-size 4rem;
   display: flex;
   flex-direction: column;
@@ -256,7 +255,6 @@ ul {
   height: 7.2rem;
   width: auto;
   position: relative;
-
 
   &:hover {
     background: rgb(82, 169, 225);
@@ -274,6 +272,22 @@ ul {
     }
     & > p {
       font-size: $regular-size;
+    }
+  }
+}
+
+.home-buttons {
+  @include until(400px) {
+    justify-content: center;
+  }
+  & li {
+    margin: 1.6rem 1.6rem 1.6rem 0;
+    @include until(600px) {
+      margin: 1.6rem auto;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
