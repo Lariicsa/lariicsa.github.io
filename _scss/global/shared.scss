@@ -110,15 +110,12 @@ ul {
 
 .inner-container {
   display: flex;
+  padding: 1.6rem 2.4rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   max-width: $maxwidth-inner-containner;
-
-  @include until(1200) {
-    padding: 1.6rem;
-  }
 
   &.top {
     align-items: flex-start;

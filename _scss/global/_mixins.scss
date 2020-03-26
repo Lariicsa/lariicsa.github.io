@@ -3,7 +3,11 @@
 
   @if $index {
     @return str-slice($string, 1, $index - 1) + $replace +
-      str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+      str-replace(
+        str-slice($string, $index + str-length($search)),
+        $search,
+        $replace
+      );
   }
 
   @return $string;
@@ -31,3 +35,20 @@
   }
 }
 
+@mixin mobile {
+  @media screen and (max-width: $mobile - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: $desktop - 1px) {
+    @content;
+  }
+}
