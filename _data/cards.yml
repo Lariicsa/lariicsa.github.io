@@ -17,3 +17,65 @@ card2:
     tag6: NPM
     tag7: Git
     tag8: Wireframing
+
+card3:
+    tag: HTML
+    tag: SCSS
+    tag: User Interface
+    tag: Sketch
+    tag: User experience
+    tag: NPM
+    tag: Git
+    tag: Wireframing
+
+card4:
+    tag1: HTML
+    tag2: SCSS
+    tag3: User Interface
+    tag4: Sketch
+    tag5: User experience
+    tag6: NPM
+    tag7: Git
+    tag8: Wireframing
+
+card5:
+    tag: HTML
+    tag: SCSS
+    tag: User Interface
+    tag: Sketch
+    tag: User experience
+    tag: NPM
+    tag: Git
+    tag: Wireframing
+
+card6:
+    tag1: HTML
+    tag2: SCSS
+    tag3: User Interface
+    tag4: Sketch
+    tag5: User experience
+    tag6: NPM
+    tag7: Git
+    tag8: Wireframing
+
+card7:
+    tag1: HTML
+    tag2: SCSS
+    tag3: User Interface
+    tag4: Sketch
+    tag5: User experience
+    tag6: NPM
+    tag7: Git
+    tag8: Wireframing
+
+card8:
+    tag1: HTML
+    tag2: SCSS
+    tag3: User Interface
+    tag4: Sketch
+    tag5: User experience
+    tag6: NPM
+    tag7: Git
+    tag8: Wireframing
+
+    

@@ -1,0 +1,160 @@
+[
+  {
+    "date": "2009, 2010 & 2011",
+    "position": "Web master internship",
+    "href": "https://www.campus-party.org",
+    "link": "Campus party",
+    "abstract": "Manage website Company, make website sections. Make newsletter",
+    "skills": [
+      "HTML",
+      "CSS",
+      "Fireworks",
+      "CONTAO CMS",
+      "Wordpress CMS",
+      "e-mailing"
+    ]
+  },
+  {
+    "date": "2012 - 2013",
+    "position": "Jr. Web Designer",
+    "href": "https://clicker360.com/",
+    "link": "Clicker360",
+    "abstract": "Create and design landing pages and marketing pages. Design and implement template e-mail marketing.",
+    "skills": [
+      "HTML",
+      "CSS",
+      "Fireworks",
+      "jQuery",
+      "e-mailing",
+      "Wordpress",
+      "Git",
+      "Photoshop"
+    ]
+  },
+  {
+    "date": "2013 - 2015",
+    "position": "Lead Web designer",
+    "href": "http://holdingleos.com/Home/Portfolio",
+    "link": "Holding Leos",
+    "abstract": "Lead Web design team. Conceptualize, design, and prototype new features on dashboard and systems interfaces for wap and web and mobile. Inject design in Front-End. Create landing pages, marketing and e-commerce sites.",
+    "skills": [
+      "HTML",
+      "CSS3",
+      "jQuery",
+      "Bootstrap",
+      "Fireworks",
+      "Wordpress",
+      ".Net MVC",
+      "e-mailing",
+      "SVN",
+      "User Interface"
+    ]
+  },
+  {
+    "date": "2015 - 2017",
+    "position": "Junior Frontend Developer",
+    "href": "https://www.segundamano.mx/",
+    "link": "Segundamano.mx",
+    "abstract": "Create and develop rules and muckup structure for CSS stack in whole site. Inject design in Front-End. Develop components for self product.",
+    "skills": [
+      "HTML",
+      "SCSS",
+      "Vue",
+      "Sketch",
+      "Jira",
+      "SCRUM",
+      "NPM",
+      "Git",
+      "Vanilla Javascript",
+      "Jade HTML",
+      "Shoestring js"
+    ]
+  },
+  {
+    "date": "2017",
+    "position": "Junior Web UI Developer",
+    "href": "https://www.globant.com",
+    "link": "Globant",
+    "abstract": "Create and develop rules and layout structure for CSS stack in whole site. Inject design in Frontend. Develop components for self product.",
+    "skills": [
+      "HTML",
+      "SCSS",
+      "React js",
+      "jQuery",
+      "Jira",
+      "NPM",
+      "Git",
+      "Shoestring js",
+      "User Interface",
+      "SCRUM",
+      "Fireworks"
+    ]
+  },
+  {
+    "date": "2017 - 2019",
+    "position": "Product Designer",
+    "href": "https://wavecation.com",
+    "link": "ASC Education",
+    "abstract": "Conceptualize, design, and prototype new features in dashboards and systems interfaces. Create components in Vue.",
+    "skills": [
+      "HTML",
+      "SCSS",
+      "Bootstrap",
+      "Sketch",
+      "User Interface",
+      "User experience",
+      "NPM",
+      "Git",
+      "Wireframing",
+      "Kanban",
+      "Vuejs",
+      "Jekyllrb"
+    ]
+  },
+  {
+    "date": "2019",
+    "position": "Freelance Web UI developer",
+    "href": "https://wavecation.com",
+    "link": "Wavecation",
+    "abstract": "Customize and fix components and make layouts for webapp company - HTML, SCSS, Bulma, Figma, Git (bitbucket + Gitflow), Angular environment.",
+    "skills": [
+      "HTML",
+      "SCSS",
+      "BulmaCSS",
+      "User Interface",
+      "Sketch",
+      "User experience",
+      "NPM",
+      "Git",
+      "Kanban",
+      "Angular"
+    ]
+  },
+  {
+    "date": "2019",
+    "position": "Freelance Frontend developer",
+    "href": "https://www.tucanton.com",
+    "link": "Tu Cantón",
+    "abstract": "Develop Web app, for product and for intern tools company. Responisble for develop User Interface with React.",
+    "skills": ["HTML", "SCSS", "React", "Sketch", "NPM", "Git", "SCRUM"]
+  },
+  {
+    "date": "Currently",
+    "position": "Frontend developer",
+    "href": "https://fantasticocomic.com",
+    "link": "Fantástico comics",
+    "abstract": "Responsible for developing the website, eCommerce, and internal use tools",
+    "skills": [
+      "HTML",
+      "SCSS",
+      "Vuejs",
+      "Sketch",
+      "NPM",
+      "Git",
+      "Kanban",
+      "Docker",
+      "Nodejs",
+      "Vanilla jasvacript"
+    ]
+  }
+]

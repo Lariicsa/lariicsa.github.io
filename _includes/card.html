@@ -1,8 +1,15 @@
-<span>{{include.date}}</span>
-<h2>{{include.charge}}</h2>
-<a href="{{include.href}}" target="_blank">{{include.link}}</a>
-<p>
-	{{include.abstract}}
-</p>
-
-
+{% for job in site.data.jobs reversed %}
+<div class="card">
+  <span>{{job.date}}</span>
+  <h2>{{job.position}}</h2>
+  <a href="{{job.href}}" target="_blank">{{job.link}}</a>
+  <p>
+    {{job.abstract}}
+  </p>
+  <div class="card-tags-box">
+    {% for skill in job.skills %}
+    <span class="tag">{{skill}}</span>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
