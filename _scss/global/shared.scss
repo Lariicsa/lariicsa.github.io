@@ -36,7 +36,7 @@ h2,
 h3 {
   margin: 1.6rem 0;
   font-weight: $bold;
-  @include until(600px) {
+  @include tablet {
     text-align: center;
     width: 100%;
   }
@@ -44,14 +44,14 @@ h3 {
 
 h1 {
   font-size: 6.4rem;
-  @include until(600px) {
+  @include tablet {
     font-size: 4rem;
   }
 }
 
 h2 {
   font-size: 5.6rem;
-  @include until(600px) {
+  @include tablet {
     font-size: 3.2rem;
   }
 }
@@ -68,7 +68,7 @@ p.cool {
     color: $girly;
   }
 
-  @include until(600px) {
+  @include tablet {
     font-size: $small-title;
     text-align: center;
   }
@@ -158,7 +158,7 @@ ul {
     @extend .col;
     flex: 0 1 auto;
     width: 50%;
-    @include until(600px) {
+    @include tablet {
       flex: 0 1 100%;
       width: 100%;
     }
@@ -258,7 +258,7 @@ ul {
     background: linear-gradient(90deg, rgba(82, 169, 225, 1) 0%, rgba(83, 154, 183, 1) 100%);
   }
 
-  @include until(800px) {
+  @include tablet {
     width: 100%;
     font-size: 1.8rem;
   }
@@ -279,7 +279,7 @@ ul {
   }
   & li {
     margin: 1.6rem 1.6rem 1.6rem 0;
-    @include until(600px) {
+    @include tablet {
       margin: 1.6rem auto;
       width: 100%;
       &:last-child {
