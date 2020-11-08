@@ -1,7 +1,7 @@
 ---
-title: Responsive Banners
+title: Grid tables in vue
 layout: post
-date: 2020-11-04 16:48
+date: 2020-10-01 16:48
 image: /assets/post-preview/coaching.jpg
 img1: /assets/coaching/coaching1.jpg
 img2: /assets/coaching/coaching2.jpg
@@ -11,7 +11,7 @@ tag:
 - HTML
 - CSS
 author: Larissa
-description: A fully responsive banner with SASS CSS and Vue
+description: Some tables with grid css and Vue js
 menurl: /blog/
 ---
 	

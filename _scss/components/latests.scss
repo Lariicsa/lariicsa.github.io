@@ -19,6 +19,11 @@
 		width: 50%;
 	}
 
+	&__extract {
+		color: $blackio;
+		text-align: center;
+	}
+
 	&-item {
 		background-color: white;
 		background-position: center center;
@@ -36,7 +41,7 @@
 		height: auto;
 		position: relative;
 
-		&>a {
+		& > a {
 			display: flex;
 			border-radius: $radius-item;
 			flex-direction: column;
@@ -46,10 +51,6 @@
 			text-decoration: none;
 			height: 100%;
 			width: 100%;
-
-			&>h3 {
-				color: inherit;
-			}
 		}
 
 		&-image {
@@ -77,12 +78,18 @@
 			left: 0;
 			z-index: 1;
 			opacity: 0;
-			transition: opacity .6s;
+			transition: opacity 0.6s;
+
+			& > .title {
+				color: inherit;
+				text-align: center;
+				padding: 0 1.6rem;
+			}
 		}
 
 		&-more {
 			background: rgb(82, 169, 225);
-			background: linear-gradient(90deg, rgba(82, 169, 225, 0.80) 0%, rgba(83, 154, 183, 0.80) 100%);
+			background: linear-gradient(90deg, rgba(82, 169, 225, 0.8) 0%, rgba(83, 154, 183, 0.8) 100%);
 			border-radius: 3.2rem;
 			margin: auto;
 			padding: 1.6rem 4rem;
@@ -109,7 +116,6 @@
 .latest-item:hover .latest-item-mask {
 	opacity: 1;
 }
-
 
 @media only screen and (max-width: 1200px) {
 	.latest {

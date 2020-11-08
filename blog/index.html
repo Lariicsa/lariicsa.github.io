@@ -16,12 +16,12 @@ s_file: utils.js
       <ul class="latest">
         {% for post in site.posts %}
         <li class="latest-item">
+          <p class="latest__extract">{{ post.description }}</p>
           <a href="{{ post.url }}">
             <div class="latest-item-image" style="background-image: url('{{post.image}}')">
-              <p class="latest__extract">{{ post.description }}</p>
             </div>
             <div class="latest-item-mask">
-              <h3>{{ post.title }}</h3>
+              <h3 class="title">{{ post.title }}</h3>
             </div>
           </a>
         </li>
