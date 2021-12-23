@@ -14,5 +14,39 @@ author: Larissa
 description: Infinite scroll component made in Vue & SASS CSS
 menurl: /blog
 ---
+
+<p>This is just an example of how to create infinite scroll behavior from an array items list.</p>
+
+<p>After create a project with in Vue, we'll need these files:</p>
+
+```json
+src
+  ├── assets
+  ├── components
+  ├── store
+  ├── app
+  └── main.js
+```
+
+```html
+<template>
+  <div class="infscroll__container">
+    <div id="infinite-list" class="infscroll__items">
+      <transition name="fade">
+        <div class="infscroll__loader-bg" v-show="showLoading">
+          <div class="infscroll__loader">{{ textLoading }}</div>
+        </div>
+      </transition>
+      <slot></slot>
+      <ButtonFan
+        v-show="isMobile"
+        @btnClick="loadMore()"
+        text="Load more ..."
+        ui="primary infscroll"
+      />
+    </div>
+  </div>
+</template>
+```
 	
 	

@@ -288,3 +288,27 @@ ul {
     }
   }
 }
+
+//code formater
+
+.language-html.highlighter-rouge {
+  background-color: #f6fafc;
+  color: $blackio;
+  width: 100%;
+  & > .highlight {
+    color: $blackio;
+
+    & > pre {
+      padding: 1.6rem;
+      & > code,
+      & > code > * {
+        font-family: 'Courier New', Courier, monospace;
+        color: $blackio;
+      }
+    }
+  }
+}
+
+.gist {
+  width: 100%;
+} 
