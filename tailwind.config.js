@@ -12,10 +12,17 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				text: "#e0e0e0",
+				"white-text": "#e0e0e0",
+				"white-opacity": "#807d7d",
 				magenta: "#8c2c7c",
-				grey1: "#282828",
-				grey2: "#363636",
+				"grey-1": "#282828",
+				"grey-2": "#363636",
+				"deg-peach": "#ffa984",
+				"deg-purple": "#c5a9f3",
+			},
+
+			fontfamily: {
+				sans: ["Khula", ...defaultTheme.fontFamily.sans],
 			},
 		},
 		screens: {
