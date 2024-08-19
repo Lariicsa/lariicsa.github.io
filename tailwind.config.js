@@ -17,12 +17,13 @@ export default {
 				magenta: "#8c2c7c",
 				"grey-1": "#282828",
 				"grey-2": "#363636",
+				"grey-3": "#1B202C",
 				"deg-peach": "#ffa984",
 				"deg-purple": "#c5a9f3",
 			},
 
 			fontfamily: {
-				sans: ["Khula", ...defaultTheme.fontFamily.sans],
+				sans: ["Kumbh Sans", ...defaultTheme.fontFamily.sans],
 			},
 		},
 		screens: {

@@ -1,18 +1,11 @@
+/** @format */
 
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: 'Khula';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Khula:wght@400;600;800&display=swap');
-  }
-  * {
-    font-family: "Khula", sans-serif;
-  }
+* {
+	font-family: "Kumbh Sans";
 }
