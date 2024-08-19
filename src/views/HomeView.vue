@@ -1,6 +1,7 @@
 <!-- @format -->
 <script setup>
 	import AppButton from "@/components/AppButton.vue";
+	import AppContact from "@/components/AppContact.vue";
 	import NavMenu from "@/components/NavMenu.vue";
 </script>
 
@@ -8,7 +9,7 @@
 	<div class="w-full max-w-[1300px] flex flex-col justify-center">
 		<NavMenu />
 
-		<main class="flex flex-col w-full mt-[80px] mx-auto max-w-[708px]">
+		<main class="flex flex-col w-full mt-[64px] mx-auto max-w-[708px]">
 			<div class="text-[64px] font-extrabold text-[#e0e0e0]">
 				Hi
 				<h1
@@ -32,6 +33,7 @@
 				>
 				<AppButton color="pink" size="lg">About me</AppButton>
 			</div>
+			<AppContact />
 		</main>
 	</div>
 </template>
