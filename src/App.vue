@@ -19,7 +19,7 @@
 
 <template>
 	<div
-		class="flex relative flex-col mx-auto w-full h-full min-h-[100vh] bg-gradient-to-b from-[#374049] to-[#282634] sm:px-[16px]">
+		class="flex relative flex-col mx-auto w-full h-full min-h-[100vh] bg-gradient-to-b from-[#374049] to-[#282634] px-[16px]">
 		<RouterView />
 
 		<AppToaster :show="showMessage" />

@@ -13,7 +13,7 @@
 
 	const size = computed(() => {
 		return {
-			lg: "h-[72px] w-auto max-w-[272px] px-[54px] text-[32px]",
+			lg: "h-[40px] sm:h-[72px] w-auto max-w-[272px] px-[16px] sm:px-[54px] text-[22px] sm:text-[32px]",
 			sm: "h-[24px] w-auto px-[12px] text-[14px]",
 		}[props.size];
 	});
@@ -30,7 +30,9 @@
 	});
 </script>
 <template>
-	<button class="border-none rounded-full active:saturate-200 sm:hover:saturate-150" :class="`${color} ${size}`">
+	<button
+		class="border-none rounded-full active:saturate-200 sm:hover:saturate-150"
+		:class="`${color} ${size}`">
 		<slot></slot>
 	</button>
 </template>

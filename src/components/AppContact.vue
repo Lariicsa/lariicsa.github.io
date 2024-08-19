@@ -23,12 +23,13 @@
 			<a
 				v-for="item in contact"
 				:href="item.link"
-				class="w-[40px] h-[40px] text-[#E0E0E0] active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
+				target="_blank"
+				class="w-[26px] h-[24px] sm:w-[40px] sm:h-[40px] text-[#E0E0E0] active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
 				<font-awesome-icon :icon="item.icon" class="w-full h-auto" />
 			</a>
 			<button
 				@click="clickOnEnvelope()"
-				class="w-[40px] h-[40px] text-[#E0E0E0] active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
+				class="w-[26px] h-[24px] sm:w-[40px] sm:h-[40px] text-[#E0E0E0] active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
 				<font-awesome-icon icon="fa-solid fa-envelope" class="w-full h-auto" />
 			</button>
 		</div>
