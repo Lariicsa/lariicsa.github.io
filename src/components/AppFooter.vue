@@ -1,5 +1,11 @@
 <!-- @format -->
 <script setup>
+	import { defineEmits } from "vue";
+	const emit = defineEmits(["clickOnEnvelope"]);
+	const clickOnEnvelope = () => {
+		emit("clickOnEnvelope");
+	};
+
 	const contact = [
 		{
 			icon: "fa-brands fa-linkedin",
@@ -25,6 +31,7 @@
 					<font-awesome-icon :icon="item.icon" class="w-[16px] h-auto" />
 				</a>
 				<button
+					@click="clickOnEnvelope"
 					class="border border-[#6C6CDC] rounded-full flex justify-center items-center w-[28px] h-[28px] active:saturate-200 sm:hover:saturate-200">
 					<font-awesome-icon icon="fa-solid fa-envelope" />
 				</button>

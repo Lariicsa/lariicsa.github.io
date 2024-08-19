@@ -3,13 +3,27 @@
 <script setup>
 	import { RouterLink, RouterView } from "vue-router";
 	import AppFooter from "@/components/AppFooter.vue";
+	import AppToaster from "@/components/AppToaster.vue";
+	import { ref } from "vue";
+
+	const showMessage = ref(false);
+
+	const copyEmailToClipboard = () => {
+		navigator.clipboard.writeText("lariicsa@gmail.com");
+		showMessage.value = true;
+		setTimeout(() => {
+			showMessage.value = false;
+		}, 3000);
+	};
 </script>
 
 <template>
 	<div
-		class="flex relative flex-col items-center mx-auto w-full h-full min-h-[100vh] bg-gradient-to-b from-[#374049] to-[#282634] sm:px-[16px]">
+		class="flex relative flex-col mx-auto w-full h-full min-h-[100vh] bg-gradient-to-b from-[#374049] to-[#282634] sm:px-[16px]">
 		<RouterView />
 
-		<AppFooter />
+		<AppToaster :show="showMessage" />
+
+		<AppFooter @clickOnEnvelope="copyEmailToClipboard" />
 	</div>
 </template>

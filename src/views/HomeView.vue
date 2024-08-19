@@ -3,6 +3,17 @@
 	import AppButton from "@/components/AppButton.vue";
 	import AppContact from "@/components/AppContact.vue";
 	import NavMenu from "@/components/NavMenu.vue";
+	import AppToaster from "@/components/AppToaster.vue";
+
+	import { ref } from "vue";
+	const showMessage = ref(false);
+	const copyEmailToClipboard = () => {
+		navigator.clipboard.writeText("lariicsa@gmail.com");
+		showMessage.value = true;
+		setTimeout(() => {
+			showMessage.value = false;
+		}, 3000);
+	};
 </script>
 
 <template>
@@ -11,10 +22,10 @@
 
 		<main class="flex flex-col w-full mt-[64px] mx-auto max-w-[708px]">
 			<div class="text-[64px] font-extrabold text-[#e0e0e0]">
-				Hi
+				Hi,
 				<h1
 					class="inline-block bg-clip-text text-transparent bg-gradient-to-r from-deg-peach to-deg-purple">
-					, I'm Larissa Avila
+					I'm Larissa Avila
 				</h1>
 			</div>
 			<p class="text-[#e0e0e0] font-semibold text-[44px]">
@@ -33,7 +44,9 @@
 				>
 				<AppButton color="pink" size="lg">About me</AppButton>
 			</div>
-			<AppContact />
+			<AppContact @clickOnEnvelope="copyEmailToClipboard" />
 		</main>
+
+		<AppToaster :show="showMessage" />
 	</div>
 </template>
