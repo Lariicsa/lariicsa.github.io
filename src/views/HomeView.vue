@@ -2,7 +2,7 @@
 <script setup>
 	import AppButton from "@/components/AppButton.vue";
 	import AppContact from "@/components/AppContact.vue";
-	import NavMenu from "@/components/NavMenu.vue";
+	
 	import AppToaster from "@/components/AppToaster.vue";
 
 	import { ref } from "vue";
@@ -18,7 +18,7 @@
 
 <template>
 	<div class="w-full max-w-[1300px] flex flex-col justify-center mx-auto">
-		<NavMenu />
+	
 
 		<main
 			class="flex flex-col w-auto mt-[32px] sm:mt-[64px] mx-auto max-w-[708px] items-center sm:items-start">

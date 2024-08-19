@@ -2,6 +2,30 @@
 <script setup>
 	import AppButton from "@/components/AppButton.vue";
 	import Applogo from "./icons/Applogo.vue";
+
+	defineProps({
+		currenRoute: {
+			type: String,
+		},
+	});
+
+	const itemsMenu = [
+		{
+			name: "Home",
+			link: "/",
+			slug: "home",
+		},
+		{
+			name: "Experience",
+			link: "/experience",
+			slug: "experience",
+		},
+		{
+			name: "About",
+			link: "/about",
+			slug: "about",
+		},
+	];
 </script>
 <template>
 	<nav
@@ -12,10 +36,17 @@
 			class="w-[24px] h-auto text-[#E0E0E0] flex sm:hidden" />
 		<div class="w-auto hidden sm:flex">
 			<ul
-				class="w-auto px-[24px] flex p-0 text-white-text text-[16px] sm:text-[18px] font-medium">
-				<li class="mr-[24px]"><a href="/" class="text-[#81B2F6]">Home</a></li>
-				<li class="mr-[24px]"><a href="/experience">Experience</a></li>
-				<li><a href="/about">About</a></li>
+				class="w-auto px-[24px] flex p-0 text-[16px] sm:text-[18px] font-medium">
+				<li v-for="item in itemsMenu" class="mr-[24px]">
+					<a
+						:href="item.link"
+						class="acive:text-[#81B2F6] sm:hovertext-[#81B2F6]"
+						:class="
+							item.slug === currenRoute ? 'text-[#81B2F6]' : 'text-[#e0e0e0]'
+						"
+						>{{ item.name }}</a
+					>
+				</li>
 			</ul>
 			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[24px]"></span>
 			<AppButton color="blue" size="sm">Resume</AppButton>
