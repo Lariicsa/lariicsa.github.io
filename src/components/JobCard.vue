@@ -20,7 +20,7 @@
 				:class="item.date === 'current' ? 'hidden' : 'flex sm:hidden'">
 			</span>
 			<div
-				class="flex w-[80px] text-[#F0BAEE] text-[14px] font-semibold capitalize absolute top-0 left-[32px] z-[3]">
+				class="flex w-[80px] text-[#F0BAEE] text-[12px] sm:text-[14px] font-semibold capitalize absolute top-[2px] sm:top-0 left-[32px] z-[3]">
 				{{ item.date }}
 			</div>
 			<span
