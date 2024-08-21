@@ -49,7 +49,13 @@
 				</li>
 			</ul>
 			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[24px]"></span>
-			<AppButton color="blue" size="sm">Resume</AppButton>
+			<AppButton
+				:isLink="true"
+				link="resume_Larissa_Avila.pdf"
+				color="blue"
+				size="sm"
+				>Resume</AppButton
+			>
 		</div>
 	</nav>
 </template>

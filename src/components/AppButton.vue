@@ -2,7 +2,6 @@
 
 <script setup>
 	import { computed, ref } from "vue";
-
 	const color = computed(() => {
 		return {
 			peach: "bg-gradient-to-r from-[#F89E7B] to-[#F58C64] text-[#373737]",
@@ -27,10 +26,28 @@
 			type: String,
 			default: "lg",
 		},
+		isLink: {
+			type: Boolean,
+			default: false,
+		},
+		link: {
+			type: String,
+			default: "/",
+		},
 	});
 </script>
 <template>
+	<a
+		v-if="isLink"
+		:href="link"
+		target="_blank"
+		class="border-none rounded-full active:saturate-200 sm:hover:saturate-150"
+		:class="`${color} ${size}`">
+		<slot></slot
+	></a>
+
 	<button
+		v-else
 		class="border-none rounded-full active:saturate-200 sm:hover:saturate-150"
 		:class="`${color} ${size}`">
 		<slot></slot>

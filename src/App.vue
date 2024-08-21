@@ -2,7 +2,7 @@
 
 <script setup>
 	import { ref, computed } from "vue";
-	import { RouterLink, RouterView, useRoute} from "vue-router";
+	import {  RouterView, useRoute} from "vue-router";
 	import AppFooter from "@/components/AppFooter.vue";
 	import NavMenu from "@/components/NavMenu.vue";
 	import AppToaster from "@/components/AppToaster.vue";

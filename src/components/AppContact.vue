@@ -19,7 +19,7 @@
 </script>
 <template>
 	<div class="flex w-auto h-auto">
-		<div class="w-[200px] flex justify-between items-center">
+		<div class="w-[320px] flex justify-between items-center">
 			<a
 				v-for="item in contact"
 				:href="item.link"
@@ -29,8 +29,8 @@
 			</a>
 			<button
 				@click="clickOnEnvelope()"
-				class="w-[26px] h-[24px] sm:w-[40px] sm:h-[40px] text-[#E0E0E0] active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
-				<font-awesome-icon icon="fa-solid fa-envelope" class="w-full h-auto" />
+				class="h-auto w-auto underline text-[18px] text-[#E0E0E0] active:text-[#81B2F6] sm:hover:text-[#81B2F6]">
+				lariicsa@gmail.com
 			</button>
 		</div>
 	</div>

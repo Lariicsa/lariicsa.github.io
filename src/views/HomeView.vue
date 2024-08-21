@@ -1,11 +1,13 @@
 <!-- @format -->
 <script setup>
+	import { useRouter } from "vue-router";
+	import { ref } from "vue";
 	import AppButton from "@/components/AppButton.vue";
 	import AppContact from "@/components/AppContact.vue";
-	
 	import AppToaster from "@/components/AppToaster.vue";
 
-	import { ref } from "vue";
+	const router = useRouter();
+
 	const showMessage = ref(false);
 	const copyEmailToClipboard = () => {
 		navigator.clipboard.writeText("lariicsa@gmail.com");
@@ -14,12 +16,14 @@
 			showMessage.value = false;
 		}, 3000);
 	};
+
+	const goTo = (path) => {
+		router.push({ path: `/${path}` });
+	};
 </script>
 
 <template>
 	<div class="w-full max-w-[1300px] flex flex-col justify-center mx-auto">
-	
-
 		<main
 			class="flex flex-col w-auto mt-[32px] sm:mt-[64px] mx-auto max-w-[708px] items-center sm:items-start">
 			<div
@@ -44,10 +48,16 @@
 
 			<div
 				class="flex w-full justify-center sm:justify-start my-[36px] sm:my-[64px]">
-				<AppButton color="peach" size="lg" class="mr-[24px] sm:mr-[48px]"
+				<AppButton
+					@click="goTo('experience')"
+					color="peach"
+					size="lg"
+					class="mr-[24px] sm:mr-[48px]"
 					>Experience</AppButton
 				>
-				<AppButton color="pink" size="lg">About me</AppButton>
+				<AppButton @click="goTo('about')" color="pink" size="lg"
+					>About me</AppButton
+				>
 			</div>
 			<AppContact @clickOnEnvelope="copyEmailToClipboard" />
 		</main>
