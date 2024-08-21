@@ -26,5 +26,5 @@
 <template>
 	<div
 		ref="expandDivRef"
-		class="flex flex-grow w-[4px] h-auto bg-gradient-to-b from-[#F8B9EE] to-[#FFF0CB] mr-[160px] relative"></div>
+		class="hidden sm:flex flex-grow w-[4px] h-auto bg-gradient-to-b from-[#F8B9EE] to-[#FFF0CB] mr-[160px] relative rounded-b-full"></div>
 </template>

@@ -82,7 +82,7 @@ import AppTimeline from "@/components/AppTimeline.vue";
 			Experience
 		</h1>
 
-		<div class="flex justify-between h-auto w-full max-w-[1230px] mt-[64px] mb-[100px]">
+		<div class="flex justify-between h-auto w-full max-w-[1230px] mt-[84px] sm:mt-[64px] mb-[100px]">
 			<AppTimeline/>
 			<div class="flex flex-col w-full">
 				
