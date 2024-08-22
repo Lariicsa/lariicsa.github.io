@@ -25,7 +25,7 @@
 
 <template>
 	<div
-		class="appMain flex relative flex-col mx-auto w-full h-full sm:min-h-[100vh] bg-gradient-to-b from-[#374049] to-[#282634] pb-0 px-[16px]">
+		class="appMain flex relative flex-col mx-auto w-full h-full min-h-[100vh] bg-gradient-to-b from-[#374049] to-[#282634] pb-0 px-[16px]">
 		<NavMenu :currenRoute="currenRoute" />
 
 		<RouterView />
@@ -35,8 +35,3 @@
 		<AppFooter @clickOnEnvelope="copyEmailToClipboard" />
 	</div>
 </template>
-<style>
-.appMain {
-	min-height: calc(100vh - 120px);
-}
-</style>

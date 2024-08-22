@@ -65,10 +65,10 @@
 
 			<div class="w-full md:w-1/3 h-full">
 				<div
-					class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[240px] h-[240px] sm:w-[290px] sm:h-[290px] mb-[88px] mt-[40px] mx-auto md:m-auto">
+					class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[200px] h-[200px] sm:w-[290px] sm:h-[290px] mb-[88px] mt-[40px] mx-auto md:m-auto">
 					<div
 						class="rounded-full w-[94%] h-[94%] bg-cover"
-						style="background-image: url(../../public/home_me.jpg)"></div>
+						style="background-image: url(/public/home_me.jpg)"></div>
 				</div>
 			</div>
 		</main>
