@@ -1,13 +1,24 @@
 <!-- @format -->
 <script setup>
+	import { ref } from "vue";
 	import AppButton from "@/components/AppButton.vue";
 	import Applogo from "./icons/Applogo.vue";
+	import AppMobileNav from "./AppMobileNav.vue";
+
+	const emit = defineEmits(["toggleMenu"]);
+
+	const isOpen = ref(false);
 
 	defineProps({
 		currenRoute: {
 			type: String,
 		},
 	});
+
+	const toggleMenu = () => {
+		console.log("ooo", isOpen.value);
+		isOpen.value = !isOpen.value;
+	};
 
 	const itemsMenu = [
 		{
@@ -31,9 +42,13 @@
 	<nav
 		class="w-full group flex justify-between items-center max-w-[1280px] h-[28px] rounded-full mt-[32px] mx-auto px-[24px] sm:px-0">
 		<Applogo class="w-[120px] h-auto" />
-		<font-awesome-icon
-			icon="fa-solid fa-bars"
-			class="w-[24px] h-auto text-[#E0E0E0] flex sm:hidden" />
+
+		<button @click="toggleMenu" class="w-[28px] h-[28px] border-none">
+			<font-awesome-icon
+				icon="fa-solid fa-bars"
+				class="w-[24px] h-auto text-[#E0E0E0] active:text-[#81B2F6] flex sm:hidden" />
+		</button>
+
 		<div class="w-auto hidden sm:flex">
 			<ul
 				class="w-auto px-[24px] flex p-0 text-[16px] sm:text-[18px] font-medium">
@@ -57,5 +72,9 @@
 				>Resume</AppButton
 			>
 		</div>
+		<AppMobileNav
+			:menuItems="itemsMenu"
+			:isOpen="isOpen"
+			@toggleButton="toggleMenu" />
 	</nav>
 </template>
