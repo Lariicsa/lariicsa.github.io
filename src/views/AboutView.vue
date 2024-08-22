@@ -17,7 +17,7 @@
 				class="flex w-auto h-[200px] md:h-auto sm:w-1/3 bg-transparent md:bg-[#FFE194] rounded-bl-[122px] relative z-[2]">
 				<div
 					class="rounded-full md:rounded-bl-[122px] md:rounded-br-none md:rounded-tr-none md:rounded-tl-none overflow-hidden w-[200px] h-[200px] sm:w-[396px] sm:h-auto bg-cover bg-no-repeat bg-right mt-[24px] md:mt-0"
-					style="background-image: url(../../public/about_me.jpg)"></div>
+					style="background-image: url(about_me.jpg)"></div>
 			</div>
 
 			<div
