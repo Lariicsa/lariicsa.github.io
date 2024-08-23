@@ -65,7 +65,7 @@
 				<AppContact @clickOnEnvelope="copyEmailToClipboard" />
 			</div>
 
-			<div class="w-full md:w-2/6 h-full mt-[60px] md:mt-0">
+			<div class="w-full md:w-2/6 h-full my-[60px] pb-[48px] md:pb-0 md:my-0">
 				<CircleImage />
 			</div>
 		</main>

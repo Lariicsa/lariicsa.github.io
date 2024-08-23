@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <script setup>
-	import { ref, defineProps } from "vue";
+	import { defineProps } from "vue";
 
 	const props = defineProps({
 		show: {
@@ -9,14 +9,12 @@
 			default: false,
 		},
 	});
-
-	const isShown = ref(props.show);
 </script>
 <template>
-	<Transition :duration="550" name="nested">
+	<Transition :duration="450" name="nested">
 		<div
 			v-if="props.show"
-			class="flex w-[156px] h-[48px] justify-center items-center bg-[#C3D994] text-[16px] font-medium text-[#373737] rounded-md shadow-md absolute bottom-[80px] left-auto">
+			class="flex w-full lg:w-[156px] h-[48px] justify-center items-center bg-[#C3D994] text-[16px] font-medium text-[#373737] rounded-sm shadow-md fixed bottom-0 lg:bottom-[64px] left-0 lg:left-auto z-[5]">
 			Copied e-Mail
 		</div>
 	</Transition>

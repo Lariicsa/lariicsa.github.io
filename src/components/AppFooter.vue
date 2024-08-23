@@ -19,7 +19,7 @@
 </script>
 <template>
 	<footer
-		class="flex w-full h-[64px] bg-gradient-to-r from-[#9494D2] to-[#ABB4FF] text-[#5252E1] absolute bottom-0 left-0 px-[16px]">
+		class="flex w-full h-[56px] bg-gradient-to-r from-[#9494D2] to-[#ABB4FF] text-[#5252E1] absolute bottom-0 left-0 px-[16px] z-[4]">
 		<div
 			class="w-full max-w-[1280px] flex justify-between items-center mx-auto">
 			<span class="text-[12px] sm:text-[16px]">Last update: August 2024</span>
