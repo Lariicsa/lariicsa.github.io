@@ -9,7 +9,7 @@
 		<div
 			class="flex items-center md:items-stretch bg-[#FFE194] flex-col sm:flex-row w-full max-w-[1124px] h-auto mt-[64px] md:mt-[108px] rounded-bl-[122px] rounded-tr-[122px] relative">
 			<p
-				class="big-txt text-[70px] sm:text-[120px] absolute top-[-72px] sm:top-[-140px] left-auto text-center w-full z-0 opacity-5 font-bold text-[#FFE194]">
+				class="big-txt text-[70px] sm:text-[120px] absolute top-[-72px] sm:top-[-120px] left-auto text-center w-full z-0 opacity-5 font-bold text-[#FFE194]">
 				About Me
 			</p>
 
@@ -21,7 +21,7 @@
 			</div>
 
 			<div
-				class="flex flex-col w-2/3 bg-transparent md:bg-[#FFE194] text-[#373737] rounded-tr-[122px] px-[24px] md:px-[48px] py-[48px] relative z-[2]">
+				class="flex flex-col w-xl sm:w-2/3 bg-transparent md:bg-[#FFE194] text-[#373737] rounded-tr-[122px] px-[24px] md:px-[48px] py-[48px] relative z-[2]">
 				<h2
 					class="text-center md:text-left font-semibold md:text-[32px] text-[24px]">
 					Larissa Avila
@@ -31,7 +31,9 @@
 					class="text-center md:text-left text-[14px] md:text-[20px] mt-[24px] md:mt-[64px]">
 					I'm a Frontend Developer with UI Design background and strong skills
 					implementing HTML & CSS in different environments like Vue, React,
-					Angular, etc. I have always enjoyed laying out and all related with
+					Angular, etc. 
+					<br/>	<br/>
+					I have always enjoyed laying out and all related with
 					user interactions. I think one of the skills that makes me different,
 					in addition to my wide CSS knowledge, is to know all about user
 					interfaces, design patterns and development interactions.
