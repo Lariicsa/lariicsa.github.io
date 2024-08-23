@@ -35,8 +35,8 @@
 				<ul class="w-full p-0">
 					<li
 						v-for="item in menuItems"
-						class="w-full text-[18px] py-[16px] text-[#f0f0f0] my-[24px] border border-x-0 border-t-0 border-b-[#51576E] border-dotted">
-						<a :href="item.link">{{ item.name }}</a>
+						class="w-full text-[18px] py-0 text-[#f0f0f0] my-[24px] border border-x-0 border-t-0 border-b-[#51576E] border-dotted">
+						<a :href="item.link" class="block h-full w-full py-[16px]">{{ item.name }}</a>
 					</li>
 				</ul>
 				<AppButton
