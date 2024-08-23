@@ -5,6 +5,7 @@
 	import AppButton from "@/components/AppButton.vue";
 	import AppContact from "@/components/AppContact.vue";
 	import AppToaster from "@/components/AppToaster.vue";
+	import CircleImage from "@/components/CircleImage.vue";
 
 	const router = useRouter();
 
@@ -24,9 +25,9 @@
 
 <template>
 	<div class="w-full flex-col max-w-[1300px] flex justify-center mx-auto">
-		<main class="flex w-full flex-col md:flex-row items-center">
+		<main class="flex w-full flex-col md:flex-row items-center justify-between">
 			<div
-				class="flex flex-col w-full md:w-2/3 mt-[32px] sm:mt-[64px] mx-auto max-w-[708px] items-center sm:items-start">
+				class="flex flex-col w-full md:w-4/6 mt-[32px] sm:mt-[64px] mx-auto items-center sm:items-start">
 				<div
 					class="text-[40px] sm:text-[64px] text-center sm:text-left font-extrabold text-[#e0e0e0]">
 					Hi,
@@ -60,16 +61,12 @@
 						>About me</AppButton
 					>
 				</div>
+
 				<AppContact @clickOnEnvelope="copyEmailToClipboard" />
 			</div>
 
-			<div class="w-full md:w-1/3 h-full">
-				<div
-					class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[200px] h-[200px] sm:w-[290px] sm:h-[290px] mb-[88px] mt-[40px] mx-auto md:m-auto">
-					<div
-						class="rounded-full w-[94%] h-[94%] bg-cover"
-						style="background-image: url(home_me.jpg)"></div>
-				</div>
+			<div class="w-full md:w-2/6 h-full mt-[80px] md:mt-0">
+				<CircleImage />
 			</div>
 		</main>
 
