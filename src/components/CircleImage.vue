@@ -7,7 +7,7 @@
 			class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[160px] h-[160px] lg:w-[200px] lg:h-[200px] mx-auto absolute left-auto top-auto z-[2]">
 			<div
 				class="rounded-full w-[94%] h-[94%] bg-cover"
-				style="background-image: url(/public/home_me.jpg)"></div>
+				style="background-image: url(home_me.jpg)"></div>
 		</div>
 		<div class="w-[280px] h-[280px] rotate absolute left-auto top-auto z-0">
 			<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
