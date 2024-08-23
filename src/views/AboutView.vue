@@ -9,7 +9,7 @@
 		<div
 			class="flex items-center md:items-stretch bg-[#FFE194] flex-col sm:flex-row w-full max-w-[1124px] h-auto mt-[64px] md:mt-[108px] rounded-bl-[122px] rounded-tr-[122px] relative">
 			<p
-				class="big-txt text-[88px] sm:text-[120px] absolute top-[-100px] sm:top-[-140px] left-auto text-center w-full z-0 opacity-5 font-bold text-[#FFE194]">
+				class="big-txt text-[70px] sm:text-[120px] absolute top-[-72px] sm:top-[-140px] left-auto text-center w-full z-0 opacity-5 font-bold text-[#FFE194]">
 				About Me
 			</p>
 

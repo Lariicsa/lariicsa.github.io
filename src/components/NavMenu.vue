@@ -41,7 +41,7 @@
 <template>
 	<nav
 		class="w-full group flex justify-between items-center max-w-[1280px] h-[28px] rounded-full mt-[32px] mx-auto px-[24px] sm:px-0">
-		<Applogo class="w-[96px] h-auto" />
+		<Applogo class="w-[116px] h-auto" />
 
 		<button @click="toggleMenu" class="w-[28px] h-[28px] border-none">
 			<font-awesome-icon
