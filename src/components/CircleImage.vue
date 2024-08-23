@@ -1,8 +1,9 @@
 <!-- @format -->
 
 <template>
-	<div
-		class="relative flex justify-center items-center w-[160px] h-[160px] md:w-[280px] md:h-[280px] mx-auto">
+	<a
+		href="/about"
+		class="relative flex justify-center items-center w-[160px] h-[160px] md:w-[280px] md:h-[280px] mx-auto sm:hover:sepia">
 		<div
 			class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[160px] h-[160px] md:w-[200px] md:h-[200px] mx-auto absolute left-auto top-auto z-[2]">
 			<div
@@ -22,7 +23,7 @@
 				</text>
 			</svg>
 		</div>
-	</div>
+	</a>
 </template>
 <style>
 	path#circlePath {
