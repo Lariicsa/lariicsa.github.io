@@ -12,7 +12,7 @@
 
 	const size = computed(() => {
 		return {
-			lg: "h-[40px] sm:h-[72px] w-auto max-w-[272px] px-[16px] sm:px-[54px] text-[22px] sm:text-[32px]",
+			lg: "h-[40px] sm:h-[72px] w-auto max-w-[272px] px-[16px] md:px-[32px] sm:px-[48px] text-[22px] sm:text-[32px]",
 			md: "h-[32px] sm:h-[64px] w-auto max-w-[200px] px-[14px] sm:px-[40px] text-[18px] sm:text-[24px]",
 			sm: "h-[24px] w-auto px-[12px] text-[14px]",
 		}[props.size];
