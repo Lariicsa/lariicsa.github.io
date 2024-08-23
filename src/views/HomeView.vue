@@ -43,9 +43,9 @@
 
 				<p
 					class="w-full text-[#9FA1A4] mt-[24px] text-[17px] sm:text-[20px] font-light text-center sm:text-left">
-					Frontend experience for over 6 years. <br />
-					Looking for new challenges where I can apply and improve my tech
-					skills with every different project.
+					Frontend experience for over 6 years (included ux/ui design). <br />
+					Looking for new challenges where I can apply and improve my skills in
+					every different project.
 				</p>
 
 				<div
@@ -65,7 +65,7 @@
 				<AppContact @clickOnEnvelope="copyEmailToClipboard" />
 			</div>
 
-			<div class="w-full md:w-2/6 h-full mt-[80px] md:mt-0">
+			<div class="w-full md:w-2/6 h-full my-[60px] pb-[48px] md:pb-0 md:my-0">
 				<CircleImage />
 			</div>
 		</main>

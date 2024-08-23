@@ -1,23 +1,21 @@
 <!-- @format -->
 
 <template>
-	<div
-		class="relative flex justify-center items-center w-[200px] h-[200px] md:w-[280px] md:h-[280px] mx-auto">
+	<a
+		href="/about"
+		class="relative flex justify-center items-center w-[160px] h-[160px] md:w-[280px] md:h-[280px] mx-auto sm:hover:sepia">
 		<div
-			class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[160px] h-[160px] lg:w-[200px] lg:h-[200px] mx-auto absolute left-auto top-auto z-[2]">
+			class="rounded-full flex justify-center items-center bg-gradient-to-r from-[#F89E7B] to-[#C5A9F3] w-[160px] h-[160px] md:w-[200px] md:h-[200px] mx-auto absolute left-auto top-auto z-[2]">
 			<div
 				class="rounded-full w-[94%] h-[94%] bg-cover"
 				style="background-image: url(home_me.jpg)"></div>
 		</div>
-		<div class="w-[280px] h-[280px] rotate absolute left-auto top-auto z-0">
+		<div
+			class="w-[220px] h-[220px] md:w-[280px] md:h-[280px] rotate absolute left-auto top-auto z-0">
 			<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 				<path
 					id="circlePath"
-					d="
-      M 10, 50
-      a 40,40 0 1,1 80,0
-      40,40 0 1,1 -80,0
-    " />
+					d="M 10, 50 a 40,40 0 1,1 80,0 40,40 0 1,1 -80,0" />
 				<text>
 					<textPath href="#circlePath">
 						A good frontend makes more friends ·
@@ -25,7 +23,7 @@
 				</text>
 			</svg>
 		</div>
-	</div>
+	</a>
 </template>
 <style>
 	path#circlePath {
@@ -33,7 +31,7 @@
 	}
 
 	text {
-		fill: #a0a0a0;
+		fill: #f1f1f0;
 		font-size: 6px;
 		text-transform: uppercase;
 		letter-spacing: 3px;
