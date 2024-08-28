@@ -1,7 +1,10 @@
 <!-- @format -->
 <script setup>
 	import { ref } from "vue";
+	import { useI18n } from "vue-i18n";
+
 	import AppButton from "@/components/AppButton.vue";
+	import AppLanguage from "@/components/AppLanguage.vue";
 	import Applogo from "./icons/Applogo.vue";
 	import AppMobileNav from "./AppMobileNav.vue";
 
@@ -16,9 +19,10 @@
 	});
 
 	const toggleMenu = () => {
-		console.log("ooo", isOpen.value);
 		isOpen.value = !isOpen.value;
 	};
+
+	const { t } = useI18n();
 
 	const itemsMenu = [
 		{
@@ -69,8 +73,10 @@
 				link="resume_Larissa_Avila.pdf"
 				color="blue"
 				size="sm"
-				>Resume</AppButton
+				>{{ $t("nav.resume") }}</AppButton
 			>
+			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[24px]"></span>
+			<AppLanguage />
 		</div>
 		<AppMobileNav
 			:menuItems="itemsMenu"
