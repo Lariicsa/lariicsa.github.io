@@ -7,7 +7,7 @@
     "home": "Inicio",
     "about": "Acerca",
     "experience": "Experiencia",
-    "resume":"Currículum"
+    "resume": "Currículum"
   },
   "home": {
     "header": "Welcome to the Vue 3 I18n tutorial!",

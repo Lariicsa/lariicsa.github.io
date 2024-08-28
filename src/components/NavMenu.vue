@@ -4,6 +4,7 @@
 	import { useI18n } from "vue-i18n";
 
 	import AppButton from "@/components/AppButton.vue";
+	import AppLanguage from "@/components/AppLanguage.vue";
 	import Applogo from "./icons/Applogo.vue";
 	import AppMobileNav from "./AppMobileNav.vue";
 
@@ -74,6 +75,8 @@
 				size="sm"
 				>{{ $t("nav.resume") }}</AppButton
 			>
+			<span class="bg-[#51576E] h-[24px] w-[2px] mx-[24px]"></span>
+			<AppLanguage />
 		</div>
 		<AppMobileNav
 			:menuItems="itemsMenu"

@@ -20,7 +20,7 @@ const Trans = {
 		i18n.global.locale.value = newLocale;
 	},
 
-	async switchLanguage(newLocale) {
+	async changeLanguage(newLocale) {
 		await Trans.loadLocaleMessages(newLocale);
 		Trans.currentLocale = newLocale;
 		document.querySelector("html").setAttribute("lang", newLocale);
@@ -88,7 +88,7 @@ const Trans = {
 			return next(Trans.guessDefaultLocale());
 		}
 
-		await Trans.switchLanguage(paramLocale);
+		await Trans.changeLanguage(paramLocale);
 
 		return next();
 	},
